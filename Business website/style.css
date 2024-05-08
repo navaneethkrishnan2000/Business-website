@@ -1,0 +1,582 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#nav-bar{ 
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar-brand{
+    height: 60px;
+    padding-left: 30px;
+}
+
+.navbar-brand img{
+    width: 150px;
+    height: 50px;
+    margin-top: 0;
+}
+
+
+.navbar-nav li{
+    padding: 0 10px;
+}
+
+.navbar-nav li a{
+    /* float: right; */
+    text-align: center;
+}
+
+/* .navbar-nav a:hover{
+    color: #007bff;
+} */
+
+.navbar ul li a:hover{
+    color: #007bff !important;
+}
+
+.navbar{
+    background: rgba(77, 73, 73, 0.3);
+}
+
+.navbar-toggler{
+    border: none !important;
+}
+
+.nav-link{
+    color: #eae9f1!important;
+    font-weight: 500 !important;
+    font-size: 16px;
+}
+
+@media(min-width:992px){
+   .ml-auto, .mx-auto {
+    margin-left: auto!important;
+    }
+} 
+
+/* ---------slider--------------------------------------------------- */
+#slider{
+    width: 100%;
+}
+
+.carousel-caption{
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: initial!important;
+}
+
+carousel-caption h5{
+    color: #fff;
+    font: 42px;
+}
+
+/* ----------about------ */
+#about{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: #555;
+}
+
+#about btn{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.about-content{
+    padding-top: 20px;
+}
+
+.skills-bar p{
+    font-size: 20px;
+    /* font-weight: 550; */
+    margin-bottom: 5px;
+}
+
+/* @media screen and (min-width:768px){
+    .skills-bar{
+        margin-top: 150px
+    }
+} */
+
+.progress-bar{
+    border-radius: 16px;
+    font-size: 15px;
+}
+
+.progress{
+    /* margin-top: 5px; */
+    border-radius: 16px;
+    margin-bottom: 30px;
+    height: 20px !important;
+}
+
+/*************services*******************************************************************************/
+#services{
+    background-image: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.5)),url("./images/office-1.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #efefef !important;
+    background-attachment: fixed;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#services h2{
+    text-align: center;
+    color: #efefef !important;
+    padding-bottom: 10px;
+}
+
+#services .container h2::after{
+    content: " ";
+    background: #efefef;
+    display: block;
+    height: 3px;
+    width: 170px;
+    margin: 10px auto 5px;
+}
+
+.servicecs{
+    margin-top: 40px;
+}
+
+.icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    margin: 20px auto;
+    padding:20px;
+    height: 80px;
+    width: 80px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+
+.icons svg{
+    
+    width: 100px;
+    height: 100vh;
+}
+
+#services{
+    font-size: 14px;
+    margin-top: 20px;
+    color: #ccc;
+}
+
+.services .col-lg-3:hover{
+    background: rgba(0, 123, 255,.5);
+    cursor: pointer;
+    transition: .7s;
+}
+
+/*-------our team----------------------------------------------------------*/
+
+/* our team heading */
+#team{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: #555;
+}
+
+#team h2{
+    text-align: center;
+    color: #555;
+    padding-bottom: 10px;
+    
+}
+
+h2::after{
+    content: ' ';
+    background: #007bff;
+    display: block;
+    height: 3px;
+    width: 170px;
+    margin: 10px auto 5px;
+}
+
+#team .profile-pic{
+    margin-top: 25px;
+}
+
+/* making the img black and white */
+#team .profile-pic .img-box img{
+    filter: grayscale(.8);
+    transition: .3s;
+}
+
+/* and making it colorful when hover */
+#team .profile-pic .img-box img:hover{
+    filter: grayscale(0);
+    cursor: pointer;
+}
+
+/* adjuting the size of the img in fullscreen and subtitles*/
+.img-responsive{
+    width: 300px;
+    height: 400px;
+}
+
+#team .profile-pic h3{
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 15px;
+    color: #007bff;
+}
+
+#team .profile-pic h4{
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 10px;
+    color: #555;
+}
+
+/* size of the brand svgs */
+#team svg{
+    height: 35px;
+    width: 35px;
+    color: #007bff;
+    background: #fff;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.img-box {
+    position: relative;
+    display: inline-block; /* added */
+}
+
+.img-box img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.img-box ul{
+    position: absolute;
+    left: 90%;
+    list-style-type: none;
+    padding: 15px 0;
+    margin: 0;
+    bottom: 10px;
+    left: 50%;
+    opacity: 0;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+} 
+
+@media (max-width: 767px) {
+    .img-box {
+        text-align: center; /* Center the image */
+    }
+
+    .img-box img {
+        margin: 0 auto; /* Center the image */
+    }
+}
+
+.img-box ul li{
+    margin-right: 20px;
+}
+
+.img-box ul li a {
+    display: block;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.img-box:hover ul{
+    opacity: 1;
+}
+
+.img-box ul, .img-box ul li{
+    transition: .5s;
+}
+
+/* Default styles */
+.profile-pic h3,
+.profile-pic h4 {
+  font-size: 24px; /* Default font size */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .profile-pic h3,
+  .profile-pic h4 {
+    font-size: 20px; /* Reduce font size for smaller screens */
+  }
+}
+
+/* Media query for even smaller screens */
+@media (max-width: 576px) {
+  .profile-pic h3,
+  .profile-pic h4 {
+    font-size: 18px; /* Further reduce font size for even smaller screens */
+  }
+}
+
+/*---------promo------*/
+
+#promo{
+    background-image: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.5)),url("./images/office-1.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    background-attachment: fixed;
+    text-align: center;
+    padding: 100px;
+    font-size: 38px;
+}
+
+/*-----------price plans-----------------------------------------------------------*/
+#price{
+    background-color: #efefef;
+    padding-bottom: 30px;
+}
+
+.single-price{
+    margin: 15px auto;
+    display: inline;
+    float: left;
+    background-color: #fff;
+    width: 100%;
+    transition: .5s;
+    border-radius: 10px;
+}
+
+.single-price:hover{
+    box-shadow: 3px 8px 14px 1px rgba(0,0,0,1);
+}
+
+.price-head{
+    background: #2196f3;
+    display: inline;
+    float: left;
+    padding: 10px 5px;
+    text-align: center;
+    width: 100%;   
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.price-head h4{
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+.price-head p{
+    font-size: 25px;
+    color: #fff;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+
+#price{
+    font-size: 15px;
+
+}    
+
+.price-content{
+    display:inline;
+    float: left;
+    width: 100%;
+    padding: 0 15px;
+
+}
+
+.price-content ul{
+    padding-left: 0;
+}
+
+.price-content ul li{
+    list-style-type: none;
+    border-bottom: 1px solid #efefef;
+    padding: 10px 10px;
+}
+
+ul li:last-child{
+    border: none;
+}
+
+.bi-check-circle-fill{
+    color: #1fcf1f;
+    margin-right: 10px;
+}
+
+.bi-x-circle-fill{
+    color: #d61515;
+    margin-right: 10px;
+}
+
+.price-button{
+    display: inline;
+    float: left;
+    padding: 15px 15px 30px;
+    text-align: center;
+    width: 100%;
+}
+
+.buy-btn{
+    text-decoration: none;
+    background-color: #2196f3;
+    color: #fff;
+    padding: 15px 50px;
+    border-radius: 3px;
+    display: inline-block;
+    transition: .5s;
+    font-size: 18px;
+}
+.buy-btn:hover{
+    border-color: 1px solid #fff;
+    background-color: #065ea7;
+}
+
+/*--------------testimonials---------------------------------------------------*/
+#testimonials .row{
+    margin-top: 30px;
+}
+
+.col-md-4{
+    margin: 40px auto;
+}
+
+.profile{
+    padding: 70px 10px 10px;
+    background-color: #efefef !important;   
+    transition: .3s; 
+}
+
+.profile:hover{
+    box-shadow: 0px 1px 10px 3px rgba(0,0,0,1);
+}
+
+.user{
+    width:200px; 
+    height:250px;
+    border-radius: 50%;
+}
+
+.profile img{
+    top: -60%;
+    /* position: absolute; */
+    left: calc(50% - 60px);
+    border: 10px solid ivory;
+}
+.profile h3{
+    font-size: 20px;
+    margin-top: 15px;
+    color: rgb(0, 123, 255);
+}
+
+.testimonials span{
+    font-size: 15px;
+    color: #555;
+}
+
+blockquote{
+    font-size: 16px;
+    line-height: 30px;
+}
+
+blockquote span svg{
+    width: 20px;
+    height: 20px;
+    color: rgb(0, 123, 255) !important;
+    position: relative;
+    line-height: 20px;
+    bottom: 10px;
+}
+
+/*----------get in touch -----------------------------------------------*/
+#contact{
+    background-image: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.5)),url("./images/office-1.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    background-attachment: fixed;
+    /* background: #efefef; */
+    /* padding-top: 40px auto; */
+    /* color: #777; */
+}
+.contact-form{
+    padding: 15px;
+
+}
+.form-group{
+    padding-bottom: 15px;
+}
+
+.follow{
+    padding: 10px;
+    margin: 15px;
+}
+.follow h5{
+    font-size: 20px;
+}
+
+.follow svg{
+    margin-right: 15px;
+}
+
+.follow p{
+    margin-top: 20px;
+    margin-left: 40px;
+    font-size: 15px;
+    color: rgb(187, 187, 194);
+}
+.follow a{
+    margin-top: 20px;
+    margin-left: 40px;
+    font-size: 15px;
+}
+
+.follow #social-icons svg{
+    display: inline;
+    width: 50px;
+    height: 50px;
+    /* text-align: center; */
+    border-radius: 50%;
+    background-color: #fff;
+    border: 5px solid white;
+
+}
+
+
+.follow #social-icons{
+    text-decoration: none;
+}
+
+/* -----------footer----------------------------------------------------------------- */
+#footer{
+    background: #efefef;
+}
+#footer .nav-item a{
+    font-size: 19px;
+    font-weight: 580 !important;
+    transition: .3s;
+    color: #555;
+}
+
+#footer .nav-item a:hover{
+    color: #007bff !important;
+}
+
+.modal-body{
+    color: #555;
+}
+
+
+
+
