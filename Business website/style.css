@@ -498,6 +498,23 @@ blockquote span svg{
     line-height: 20px;
     bottom: 10px;
 }
+/*------faq--------------------/----------------------------------*/
+
+#faq .accordion-header::after{
+    content: none;
+}
+
+#faq{
+    background-color: #efefef;
+}
+
+/* .accordion{
+    background: #efefef;
+} */
+
+.accordion-item{
+    margin: 0 auto;
+}
 
 /*----------get in touch -----------------------------------------------*/
 #contact{
